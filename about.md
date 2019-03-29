@@ -1,7 +1,6 @@
 ---
 layout: page
-title: A Boat 365
+title: About
 permalink: /about/
 ---
-
-本博客主要介绍Java WEB开发技术
+本博客基于[jekyll](https://jekyllrb.com/)创建，部署在github上。
