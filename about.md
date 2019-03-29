@@ -7,7 +7,7 @@ permalink: /about/
 
 我的[简书](https://www.jianshu.com/u/ba1e421f238b)
 
-我的公众号:aboat365
+我的公众号
 
 ![微信公众号](/v_images/20190329171955940_32498.jpg)
 
