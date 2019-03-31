@@ -5,4 +5,158 @@ date:   2019-03-29 13:10:59 +0800
 categories: maven
 ---
 
-暂时没有什么内容
+# 0 先觉条件
+
+阅读本文前，您需要初步掌握Java，并了解XML。
+
+# 1 引言
+
+Maven是一个非常强大的项目构建工具，成千上万的项目在使用它。[中央仓库](https://search.maven.org/)里几乎包含所有的开源JAR，这为开发者们提供了巨大的便利。本文通过一个Maven创建项目的实例，来简单描述Maven。
+
+# 2 Maven概述
+
+Maven，是意第绪语的一个词汇，意思是知识的积累者，其美式发音为【ˈmevən】。  
+起初是一群程序员正在开发一个名为Jakarta Turbine的项目，使用一个叫Ant的工具进行构建。本来按部就班写代码就好，但这群程序员总是觉得这Ant工具实在不好用。于是他们一致决定开启支线任务，重写一个工具替代Ant，并将这个新工具命名为Maven。  
+
+# 3 Maven的目标
+
+Maven是一个新的工具，自然会有更远的目标。一句话描述：简化项目构建过程！  
+那具体如何简化项目构建过程呢？回答这个问题之前我们需要先了解项目构建过程中会遇到哪些问题。
+
+## 3.1 项目的依赖
+
+在一个项目中，我们会引入很多第三方的库，一般是JAR文件。这些JAR文件来自团队里不同模块功能的打包，或者来自第三方团队。这些JAR文件会有名字、版本等信息。  
+JAR也有自己的依赖，如果A.jar依赖B.jar,你在项目中只引入了A.jar文件，那程序就无法运行。像这种层层依赖，再加上依赖的版本不同，依赖的数量一多，对于开发者来说，那将是一件可怕的事情。
+
+## 3.2 发布项目描述信息
+
+当你开发一个功能软件，打包成JAR文件提供给其它工程引入使用。你将需要定义该软件的一些基础信息，比如名字，版本号。众多的开发者需要一个标准规范来描述他们发布的软件，统一规范就如同秦始皇的书同文，车同轨，对于规模化的软件项目是非常必要的。
+
+## 3.3 多项目共享JAR
+
+创建一个项目需要依赖许多JAR文件，这些文件需要复制到项目类加载器指定的文件夹中。如果你创建多个工程，显然相同的依赖你需要重新复制一份，这样你的硬盘上将有许多重复拷贝的JAR文件。这是一件很傻的事情，但有什么办法解决这个问题呢？
+
+下面我们将使用Maven这个工具，通过一个实例来回答以上三个问题。
+
+# 4 使用Maven构建JAVA工程
+
+我们将使用Maven来构建一个项目，在实际操作中体会Maven是如何解决项目依赖、发布项目描述信息、多项目共享JAR这三个问题的。
+
+## 4.1 下载Maven工具
+
+Maven是Apache组织的开源项目，我们需要到Apache的网站上下载。  
+地址：<http://maven.apache.org>
+
+## 4.2 配置环境变量
+
+Windows、Mac、Linux 配置环境变量的方式各不相同，请各位自行查找方法。
+注意：Maven是JAVA语言编写的工具，你的计算机上需要先安装配置JDK。  
+
+## 4.3 执行Maven创建项目的命令
+
+在你需要创建项目的目录下启动一个shell，执行以下命令
+
+```shell
+mvn archetype:generate -DgroupId=com.mycompany.app -DartifactId=my-app -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.4 -DinteractiveMode=false
+```
+
+注意：初次执行你的计算机需要连接到互联网，并能访问Maven的中央仓库。初次执行需要一些时间，因为有些JAR或其它文件需要下载。
+
+## 4.4 Maven工程的目录结构
+
+执行成功后进入my-app目录下，你将看到如下的文件目录结构：
+
+```shell
+my-app
+|-- pom.xml
+`-- src
+    |-- main
+    |   `-- java
+    |       `-- com
+    |           `-- mycompany
+    |               `-- app
+    |                   `-- App.java
+    `-- test
+        `-- java
+            `-- com
+                `-- mycompany
+                    `-- app
+                        `-- AppTest.java
+```
+
+这便是一个标准的Maven工具创建的项目。在这个项目根目录中，你将看到一个pom.xml文件，该文件就是Maven项目的核心配置文件，我们称之为项目对象模型（Project Object Model），即POM。src/ main/java目录下放置项目的源代码，src/test/ java目录下放置测试源代码。
+
+## 4.5 POM
+
+以下就是生成的pom.xml文件内容：
+
+```xml
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.mycompany.app</groupId>
+  <artifactId>my-app</artifactId>
+  <version>1.0-SNAPSHOT</version>
+
+  <properties>
+    <maven.compiler.source>1.7</maven.compiler.source>
+    <maven.compiler.target>1.7</maven.compiler.target>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.12</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+</project>
+```
+
+pom.xml配置文件是一个基于xml语言定义的文本文件。如果你不了解xml，请先自行了解。  
+在这份非常简单的配置文件中，我们可以看到以下内容：
+
+```xml
+<groupId>com.mycompany.app</groupId>
+<artifactId>my-app</artifactId>
+<version>1.0-SNAPSHOT</version>
+```
+
+聪明如你，一看便知，这就是定义本项目的组id、名字、以及版本号。而dependencies标签下的内容结构与此类似，这就是定义本项目依赖的第三方JAR（定义好第三方依赖，执行相关命令，Maven将自动去中央仓库下载JAR文件至本地仓库中。如果本地仓库中已有该JAR文件，将无需下载）。引入的第三方JAR文件，如果也是Maven构建的，那它的依赖也将自动下载。
+
+## 4.6 执行Maven打包命令
+
+如同上面创建Maven项目一样，打开一个shell，但需要进入到项目根目录下，执行以下命令，即可将项目打包成一个JAR文件。
+
+```shell
+mvn package
+```
+
+命令执行成功后生成的JAR文件放置在项目下的target文件夹中，初次执行会自动创建target目录。
+
+你可以执行一下该JAR文件
+
+```shell
+java -cp target/my-app-1.0-SNAPSHOT.jar com.mycompany.app.App
+```
+
+成功的话，你会看到如下内容
+
+```shell
+Hello World!
+```
+
+至此，Maven便轻松的解决了项目依赖、发布项目描述信息、多项目共享JAR这三个问题。并且一站式解决项目创建，编译、打包、发布等功能。
+
+## 4.7 IDE中使用Maven
+
+以上Maven命令式的使用方式，在实际开发中很少用到。因为我们肯定是使用Eclipse、IDEA或者VSCode等软件，这些软件中，都有相应的集成Maven，具体配置使用细节此处不表，大家自行了解。
+
+# 5 结束语
+
+本文只是非常简单的介绍Maven，更多强大的功能请各位开发者们自行研究。深入了解后你会发现，Maven是如此的美好，也可能会发现一些需要改进的地方，这时候你不妨试用一下[Gradle](https://gradle.org/)，号称下一代构建工具。
+
+# 参考文献
+[1]<http://maven.apache.org/index.html>  
