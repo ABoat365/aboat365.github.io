@@ -16,7 +16,7 @@
 title: A Boat 365
 email: clear_windy@yeah.net
 description: >- # this means to ignore newlines until "baseurl:"
-  帮助更多的开发者学习JAVA WEB
+  一只船不如一本书
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://aboat365.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: ABoat365
