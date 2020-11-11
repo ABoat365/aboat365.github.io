@@ -23,11 +23,11 @@ categories: prose
 
 # 起步
 
-## 制定警报规则
+### 制定警报规则
 
-## 发送警报
+### 发送警报
 
-## 屏蔽警报
+### 屏蔽警报
 
 # 参考文献
 [1]普罗米修斯V2.22[EB/OL].<https://prometheus.io/docs/alerting/latest/overview/>.2020-11-11
