@@ -4,11 +4,11 @@ title:  "普罗米修斯-警报"
 date:   2020-11-11 06:00:00 +0800
 categories: prose
 ---
-# 引言 #
+## 引言 #
 普罗米修斯的警报功能分为两个部分，分别是普罗米修斯和警报管理器。普罗米修斯根据警报规则生成警报信息，发送给警报管理器，由警报
 管理器存储和分发警报信息。
 
-# 功能特征
+## 功能特征
 普罗米修斯（Prometheus）
 - 基于PromQL表达式告警触发条件；
 - 自定义告警评估等待时间；
@@ -21,13 +21,36 @@ categories: prose
 - 告警路由，根据标签，对当前警报信息发送至不同接收者；
 - 定义抑制规则，提供WEB界面创建抑制规则，也可令生效规则过期；
 
-# 起步
-
+## 起步
+### 普罗米修斯关联警报管理器
+编辑普罗米修斯配置文件：prometheus.yml
+```
+alerting:
+  alertmanagers:
+    - static_configs:
+        - targets: ['localhost:9093']
+```
+其中targets参数是警报管理器IP和端口，修改完毕后重启普罗米修斯服务。可访问普罗米修斯Web界面<http://ip:9090/config>
+查看alerting是否生效。注意防火墙状态及配置，否则可能无法访问Web界面。  
+#### 重启普罗米修斯
+启动命令如果是以下命令：
+```
+./prometheus --web.enable-lifecycle &
+```
+则可以发送http请求热重启
+```
+curl -X POST http://IP/-/reload
+```
+否则，只能通过kill -hup pid命令来重启
+```
+kill -hup 29657  //重启命令
+kill -term 29657 //关闭命令
+```
 ### 制定警报规则
 
 ### 发送警报
 
 ### 屏蔽警报
 
-# 参考文献
+## 参考文献
 [1]普罗米修斯V2.22[EB/OL].<https://prometheus.io/docs/alerting/latest/overview/>.2020-11-11
