@@ -39,7 +39,7 @@ alerting:
 ```
 则可以发送http请求热重启
 ```
-curl -X POST http://IP:9090/-/reload
+curl -X POST http://ip:9090/-/reload
 ```
 否则，只能通过kill -hup pid命令来重启
 ```
