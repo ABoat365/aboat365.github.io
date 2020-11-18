@@ -1,0 +1,16 @@
+---
+layout: post
+title:  "Thanos灭霸的力量"
+date:   2020-11-18 06:00:00 +0800
+categories: monitor
+---
+
+## 1 引言
+[普罗米修斯（Prometheus）](https://prometheus.io/)是一个非常强大的开源监控解决方案，但在高可用和历史数据存储方面略显羸弱。[Thanos](https://thanos.io/)补齐了普罗米修斯的短板，与Prometheus无缝集成，并为它带来了全局视图和不受限制的历史数据存储能力。Prometheus加Thanos，如虎添翼，超大集群也能轻松面对。
+
+## 2 功能特征
+
+
+## 3 起步
+
+## 4 参考文献
