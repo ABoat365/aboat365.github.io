@@ -36,7 +36,7 @@
 
 # 2. Grant of License
 
-## 2.1. License. The Developer hereby grants You a limited, worldwide, non-exclusive, non-transferable license to use the Plugin (including any generally available updates and upgrades released during your rightful use of the Plugin) as long as the use is in line with Your Confirmation, the Documentation, and the limits set out in this Standard EULA. You may:
+2.1. License. The Developer hereby grants You a limited, worldwide, non-exclusive, non-transferable license to use the Plugin (including any generally available updates and upgrades released during your rightful use of the Plugin) as long as the use is in line with Your Confirmation, the Documentation, and the limits set out in this Standard EULA. You may:
 
 install the Plugin;
 
@@ -44,9 +44,9 @@ use the Plugin subject to the limits described in Your Confirmation (if any); an
 
 make backup copies of the Plugin for archival purposes.
 
-## 2.2. Restrictions. You may not modify, reverse-engineer, decompile, or disassemble the Plugin in whole or in part, or create any derivative works from the Plugin, or sublicense any rights to the Plugin, unless otherwise expressly authorized in writing by the Developer.
+2.2. Restrictions. You may not modify, reverse-engineer, decompile, or disassemble the Plugin in whole or in part, or create any derivative works from the Plugin, or sublicense any rights to the Plugin, unless otherwise expressly authorized in writing by the Developer.
 
-## 2.3. Duration of License. The license granted under this Standard EULA can be provided as:
+2.3. Duration of License. The license granted under this Standard EULA can be provided as:
 
 perpetual in case of Free Plugins or Paid Plugins for which You are charged a one-time license fee, and
 
@@ -56,11 +56,11 @@ For more details about the type of Paid Plugin, see the information in Your Conf
 
 # 3. Subscription
 
-## 3.1. Subscription Limits. If You purchased a Plugin Subscription, You must use the Paid Plugin in accordance with the limits described in Your subscription plan (e.g., You must ensure that the maximum number of Plugin Users does not exceed the number of Plugin Users for which You have purchased the Subscription).
+3.1. Subscription Limits. If You purchased a Plugin Subscription, You must use the Paid Plugin in accordance with the limits described in Your subscription plan (e.g., You must ensure that the maximum number of Plugin Users does not exceed the number of Plugin Users for which You have purchased the Subscription).
 
-## 3.2. Subscription Period. The Subscription Period can be either annual or monthly.
+3.2. Subscription Period. The Subscription Period can be either annual or monthly.
 
-## 3.3. Fallback License. If the Plugin is provided with a Fallback license according to the Confirmation, following the expiration of the Subscription Period without a renewal, Your license to use the Plugin as stipulated in Section 2 shall continue on a perpetual, royalty-free, non-exclusive, and non-transferable basis with respect to the Fallback Version of the Plugin (including all limitations). The granting of the Fallback license is expressly contingent upon Your compliance with this EULA, including Your payment of the applicable Subscription fees for at least the preceding 12 months in full and without interruptions.
+3.3. Fallback License. If the Plugin is provided with a Fallback license according to the Confirmation, following the expiration of the Subscription Period without a renewal, Your license to use the Plugin as stipulated in Section 2 shall continue on a perpetual, royalty-free, non-exclusive, and non-transferable basis with respect to the Fallback Version of the Plugin (including all limitations). The granting of the Fallback license is expressly contingent upon Your compliance with this EULA, including Your payment of the applicable Subscription fees for at least the preceding 12 months in full and without interruptions.
 
 # 4. Intellectual Property
 
