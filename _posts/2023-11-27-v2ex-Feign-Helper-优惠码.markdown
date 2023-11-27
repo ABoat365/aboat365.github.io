@@ -7,6 +7,8 @@ categories: Feign-Helper
 
 # IDEA 插件 Feign-Helper V2EX 专属优惠码
 
+<iframe width="384px" height="319px" src="https://plugins.jetbrains.com/embeddable/card/23146"></iframe>
+
 IDEA 插件名称：Feign-Helper  
 IDEA 版本范围：2021.3 ~ 2023.3  
 核心功能：
