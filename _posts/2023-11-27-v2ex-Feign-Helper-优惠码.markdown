@@ -7,6 +7,15 @@ categories: Feign-Helper
 
 # IDEA 插件 Feign-Helper V2EX 专属优惠码
 
+IDEA 插件名称：Feign-Helper  
+IDEA 版本范围：2021.3 ~ 2023.3  
+核心功能：
+- Spring Web HTTP API 检索（按两下 Shift 键打开，有个 URL 选项卡）
+- Spring Cloud Feign 接口与和对应的 Controller 源码间互相跳转（源码在同一个工程内）。
+
+插件链接： https://plugins.jetbrains.com/plugin/23146-feign-helper?noRedirect=true
+
+
 注意：优惠码在购买订单中输入使用，不是激活码！
 
 - 4FSAH-9SKU2-WXWLE-8EK94-UWB6D
@@ -21,7 +30,6 @@ categories: Feign-Helper
 - JCVTK-GNRV3-MAZRC-D9PSZ-QYP58
 - T42Q3-5FZCB-ASXLN-CXD24-WULG5
 - 6P2RQ-2J787-4KBFN-X332A-H9CTP
-
 
 ## 家里几座山的橙子熟了，给 V2EX 的朋友们带来精品脐橙，价格实惠，品质优良
 - 江西、广东、湖南、湖北、福建、安徽、浙江、上海、江苏：10 斤 69 元，20 斤 116 元
