@@ -13,7 +13,7 @@ IDEA 版本范围：2021.3 ~ 2023.3
 - Spring Web HTTP API 检索（按两下 Shift 键打开，有个 URL 选项卡）
 - Spring Cloud Feign 接口与和对应的 Controller 源码间互相跳转（源码在同一个工程内）。
 
-插件链接： https://plugins.jetbrains.com/plugin/23146-feign-helper?noRedirect=true
+插件链接： [Feign-Helper](https://plugins.jetbrains.com/plugin/23146-feign-helper?noRedirect=true)
 
 
 注意：优惠码在购买订单中输入使用，不是激活码！
