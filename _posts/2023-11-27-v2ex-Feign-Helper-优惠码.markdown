@@ -42,9 +42,3 @@ IDEA 版本范围：2021.3 ~ 2023.3
 添加微信购买：15016059211
 
 果园位于江西省赣州市信丰县，果径 70~100 mm，当前味道最佳，欢迎各位朋友购买。
-
-<script src="https://plugins.jetbrains.com/assets/scripts/mp-widget.js"></script>
-<script>
-  // Please, replace #yourelement with a real element id on your webpage
-  MarketplaceWidget.setupMarketplaceWidget('card', 23146, "#yourelement");
-</script>
