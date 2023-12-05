@@ -10,17 +10,16 @@ categories: Feign-Helper
 <iframe width="384px" height="319px" src="https://plugins.jetbrains.com/embeddable/card/23146"></iframe>
 
 IDEA 插件名称：Feign-Helper  
-IDEA 版本范围：2021.3 ~ 2023.3  
+IDEA 版本范围：2021.1 ~ 2023.3  
 核心功能：
-- Spring Web HTTP API 检索（按两下 Shift 键打开，有个 URL 选项卡）
-- Spring Cloud Feign 接口与和对应的 Controller 源码间互相跳转（源码在同一个工程内）。
+- Spring Web HTTP API 检索（按两下 Shift 键打开，有个 URL 选项卡），搜索范围包括依赖的 jar 文件。
+- Spring Cloud Feign 与 Controller 源码导航（源码在同一个工程内）。
 
 插件链接： [Feign-Helper](https://plugins.jetbrains.com/plugin/23146-feign-helper?noRedirect=true)
 
 
 注意：优惠码在购买订单中输入使用，不是激活码！
 
-- VV7ZW-4YVBD-CHGHC-9SXJ5-9XAW4
 - 5ACKV-Y78B4-QQHNR-EV6FM-2HT7D
 - LUK6L-CAHZX-CT9RF-DNYKJ-LKYXU
 - XTXA8-9Q5K2-VU3VX-895PW-FGR6J
@@ -30,11 +29,17 @@ IDEA 版本范围：2021.3 ~ 2023.3
 - ZEMV6-65R8U-9JVY9-ZVNT3-JYTXS
 - 6P2RQ-2J787-4KBFN-X332A-H9CTP
 - D8MWD-A2JBG-MT4A4-Z8JKJ-FVGS2
-- 7LLDX-9TALP-E98VU-8JT6P-EA8U8
-- VE8L3-47KWU-3CVD7-WGLSV-8QSCR
-- C7U5J-SNC8Z-3NRLH-PRYDK-E74XV
-- RAMNY-ZWTNK-VHXA3-EQP7G-NZKET
-- Y22FR-QE76U-AT479-B4H7N-SKPNC
+- SGTBZ-57EAZ-88MVK-8G3YU-KZ2UP
+- 5TFTG-NVKYU-8L2GV-XH6E8-6FY9B
+- FSDXG-AYJJB-YQBVZ-7ZFAM-7TL79
+- 4EU4S-SQTFJ-KGHY4-RXC85-HN735
+- D3RLY-DLRHF-JDUNP-MHPVW-TVERX
+- TQMEK-AUS8T-7W4P2-KUYCL-QP2CR
+- B6XEV-G6GJZ-7HB2Y-A56CA-AK66C
+- BY6L9-M6ZNF-73TQN-UPW7Y-S2QEH
+- 6UKHK-UY88K-NCYN3-E3Z55-RE6KT
+- 46T2R-JZB48-LRUZJ-L3L52-UZ63S
+- 5KQRA-JRKC6-WFBQY-FGYPG-NDVG5
 
 ### 家里几座山的橙子熟了，给 V2EX 的朋友们带来精品脐橙，价格实惠，品质优良
 - 江西、广东、湖南、湖北、福建、安徽、浙江、上海、江苏：10 斤 69 元，20 斤 116 元
